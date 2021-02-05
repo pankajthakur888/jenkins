@@ -18,6 +18,7 @@ EOF
 #EOF
     sudo chmod +x addusers.sh
     sudo bash -x addusers.sh
+    sudo usermod -aG sudo jenkins
     su jenkins
     cd /home/jenkins
 
