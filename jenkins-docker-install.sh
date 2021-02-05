@@ -1,10 +1,10 @@
 #jenkins
 
 # quietly add a user without password
-adduser --quiet --disabled-password --shell /bin/bash --home /home/jenkins --gecos "User" jenkins
+sudo adduser --quiet --disabled-password --shell /bin/bash --home /home/jenkins --gecos "User" jenkins
 
 # set password
-echo "jenkins:jack@ma" | chpasswd
+sudo echo "jenkins:jack@ma" | chpasswd
 
 #    touch addusers.sh
 #cat << EOF > addusers.sh
@@ -17,6 +17,7 @@ echo "jenkins:jack@ma" | chpasswd
 #    sudo bash -x addusers.sh
     sudo -s
     su jenkins
+    cd /home/jenkins
 
 #DOKER INSTALL
     sudo apt-get update
