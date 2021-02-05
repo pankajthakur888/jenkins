@@ -54,9 +54,10 @@ EOF
     sudo du -sh /var/lib/docker/   #to check docker
 
 #Jenkins install
-    mkdir jenkins-data
-    cd jenkins-data
-    mkdir jenkins_home
+	cd /home/jenkins
+    sudo mkdir jenkins-data
+    sudo cd jenkins-data
+    sudo mkdir jenkins_home
 
 touch docker-compose.yml
 cat << EOF > docker-compose.yml
