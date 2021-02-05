@@ -1,14 +1,20 @@
 #jenkins
 
-    touch addusers.sh
-cat << EOF > addusers.sh
-#!/bin/bash
-sudo addgroup devops
-sudo adduser jenkins --gecos "Jenkins ,2,1990088944" --disabled-password
-echo "jenkins:jenkins" | sudo chpasswd | sudo adduser jenkins devops
-EOF
-    sudo chmod +x addusers.sh
-    sudo bash -x addusers.sh
+# quietly add a user without password
+adduser --quiet --disabled-password --shell /bin/bash --home /home/jenkins --gecos "User" jenkins
+
+# set password
+echo "jenkins:jack@ma" | chpasswd
+
+#    touch addusers.sh
+#cat << EOF > addusers.sh
+##!/bin/bash
+#sudo addgroup devops
+#sudo adduser jenkins --gecos "Jenkins ,2,1990088944" --disabled-password
+#echo "jenkins:jenkins" | sudo chpasswd | sudo adduser jenkins devops
+#EOF
+#    sudo chmod +x addusers.sh
+#    sudo bash -x addusers.sh
     sudo -s
     su jenkins
 
