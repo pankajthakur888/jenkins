@@ -1,5 +1,5 @@
 #jenkins
-    adders jenkins
+    adduser jenkins
     usermod -aG sudo jenkins
 
 #DOKER INSTALL
