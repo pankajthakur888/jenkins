@@ -1,7 +1,15 @@
 #jenkins
-    sudo adduser jenkins
-    sudo usermod -aG sudo jenkins
 
+sudo touch addusers.sh
+sudo cat << EOF > addusers.sh
+#!/bin/bash
+sudo addgroup devops
+sudo adduser jenkins --gecos "Jenkins ,2,1990088944" --disabled-password
+echo "jenkins:jenkins" | sudo chpasswd | sudo adduser jenkins devops
+EOF
+    sudo chmod +x addusers.sh
+    sudo bash -x addusers.sh
+    
 #DOKER INSTALL
     sudo apt-get update
     sudo apt-get install \
