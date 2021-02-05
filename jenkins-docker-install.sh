@@ -1,10 +1,11 @@
 #jenkins
 
+
 # quietly add a user without password
-sudo adduser --quiet --disabled-password --shell /bin/bash --home /home/jenkins --gecos "User" jenkins
+sudo adduser jenkins --gecos "jenkins jenkins,8989898 ,9900990099,HomePhone" --disabled-password
 
 # set password
-sudo echo "jenkins:jack@ma" | chpasswd
+echo "jenkins:passoo7#" | sudo chpassw
 
 #    touch addusers.sh
 #cat << EOF > addusers.sh
