@@ -9,7 +9,9 @@ echo "jenkins:jenkins" | sudo chpasswd | sudo adduser jenkins devops
 EOF
     sudo chmod +x addusers.sh
     sudo bash -x addusers.sh
-    
+    sudo su
+    su jenkins
+
 #DOKER INSTALL
     sudo apt-get update
     sudo apt-get install \
