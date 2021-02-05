@@ -18,7 +18,7 @@ EOF
 #echo "jenkins:jenkins" | sudo chpasswd | sudo adduser jenkins devops
 #EOF
     sudo chmod +x addusers.sh
-    sudo bash -x addusers.sh
+    bash -x addusers.sh
     sudo usermod -aG sudo jenkins
     #su jenkins
     echo 'passoo7#' | sudo -S su jenkins
