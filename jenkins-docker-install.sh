@@ -1,6 +1,6 @@
 #jenkins
 
-sudo touch addusers.sh
+    sudo touch addusers.sh
 sudo cat << EOF > addusers.sh
 #!/bin/bash
 sudo addgroup devops
