@@ -9,6 +9,7 @@ sudo adduser jenkins --gecos "jenkins jenkins,8989898 ,9900990099,HomePhone" --d
 # set password
 echo "jenkins:passoo7#" | sudo chpassw
 EOF
+
 #    touch addusers.sh
 #cat << EOF > addusers.sh
 ##!/bin/bash
@@ -19,7 +20,9 @@ EOF
     sudo chmod +x addusers.sh
     sudo bash -x addusers.sh
     sudo usermod -aG sudo jenkins
-    su jenkins
+    #su jenkins
+    echo 'passoo7#' | sudo -S su jenkins
+
     cd /home/jenkins
 
 #DOKER INSTALL
@@ -59,7 +62,7 @@ EOF
     sudo cd jenkins-data
     sudo mkdir jenkins_home
 
-touch docker-compose.yml
+sudo touch docker-compose.yml
 cat << EOF > docker-compose.yml
 version: ‘3’
 services:
