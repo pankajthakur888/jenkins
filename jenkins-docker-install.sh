@@ -59,10 +59,11 @@ EOF
 #Jenkins install
 	cd /home/jenkins
     sudo mkdir jenkins-data
-    sudo cd jenkins-data
     sudo mkdir jenkins_home
+    	cd /home/jenkins/jenkins-data
+    touch docker-compose.yml
+    echo 'passoo7#' | sudo -S chown jenkins:jenkins docker-compose.yml
 
-sudo touch docker-compose.yml
 cat << EOF > docker-compose.yml
 version: ‘3’
 services:
