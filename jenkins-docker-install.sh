@@ -18,7 +18,6 @@ echo "jenkins:passoo7#" | sudo chpassw
 #EOF
 #    sudo chmod +x addusers.sh
 #    sudo bash -x addusers.sh
-    sudo -s
     su jenkins
     cd /home/jenkins
 
