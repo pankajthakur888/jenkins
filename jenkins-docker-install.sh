@@ -1,7 +1,7 @@
 #jenkins
 
-    sudo touch addusers.sh
-sudo cat << EOF > addusers.sh
+    touch addusers.sh
+cat << EOF > addusers.sh
 #!/bin/bash
 sudo addgroup devops
 sudo adduser jenkins --gecos "Jenkins ,2,1990088944" --disabled-password
