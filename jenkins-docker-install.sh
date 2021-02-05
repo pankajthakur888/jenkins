@@ -1,6 +1,6 @@
 #jenkins
-    adduser jenkins
-    usermod -aG sudo jenkins
+    sudo adduser jenkins
+    sudo usermod -aG sudo jenkins
 
 #DOKER INSTALL
     sudo apt-get update
