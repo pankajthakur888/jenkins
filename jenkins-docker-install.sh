@@ -23,7 +23,7 @@ EOF
     sudo rm addusers.sh
     sudo usermod -aG sudo jenkins
     #su jenkins
-    echo 'passoo7' | sudo -S su jenkins
+    #echo 'passoo7' | sudo -S su jenkins
 
     cd /home/jenkins
 
