@@ -67,5 +67,6 @@ EOF
 	echo 'passoo7#' | sudo -S chown jenkins:jenkins docker-compose.yml
 
     id     # to check jenkins_home uid
-    docker-compose up -d
+    echo 'passoo7#' | sudo -S docker-compose up -d
+    #docker-compose up -d
     docker logs -f jenkins
