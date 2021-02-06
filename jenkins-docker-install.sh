@@ -61,14 +61,14 @@ EOF
     sudo mkdir jenkins-data
     sudo mkdir jenkins_home
     	cd /home/jenkins/jenkins-data
-    touch docker-compose.yml
+    sudo touch docker-compose.yml
     echo 'passoo7#' | sudo -S chown jenkins:jenkins docker-compose.yml
 
 cat << EOF > docker-compose.yml
-version: ‘3’
-services:
-jenkins:
-container_name: jenkins
+#version: ‘3’
+#services:
+#jenkins:
+#container_name: jenkins
 image: jenkins/jenkins
 ports:
 - “8080:8080”
