@@ -1,8 +1,15 @@
-#!/usr/bin/sh
+#!/bin/bash
+#Update Server
+	sudo apt update -y
+	sudo apt upgrade -y
+
+#Time and Date update and Network Tools 
+	sudo timedatectl set-timezone Asia/Kolkata
+	sudo apt install net-tools -y
 
 #jenkins
 
-touch addusers.sh
+	touch addusers.sh
 
 cat << EOF > addusers.sh
 # quietly add a user without password
@@ -11,13 +18,6 @@ sudo adduser jenkins --gecos "jenkins jenkins,8989898 ,9900990099,HomePhone" --d
 echo "jenkins:passoo7" | sudo chpasswd
 EOF
 
-#    touch addusers.sh
-#cat << EOF > addusers.sh
-##!/bin/bash
-#sudo addgroup devops
-#sudo adduser jenkins --gecos "Jenkins ,2,1990088944" --disabled-password
-#echo "jenkins:jenkins" | sudo chpasswd | sudo adduser jenkins devops
-#EOF
     sudo chmod +x addusers.sh
     bash -x addusers.sh
     sudo rm addusers.sh
