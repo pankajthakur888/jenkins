@@ -64,6 +64,8 @@ EOF
     sudo touch docker-compose.yml
     echo 'passoo7#' | sudo -S chown jenkins:jenkins docker-compose.yml
 
+ 	sudo wget https://github.com/pankajthakur888/streaming/raw/main/nginx-rtmp.zip
+
 cat << EOF > docker-compose.yml
 #version: ‘3’
 #services:
