@@ -61,8 +61,9 @@ EOF
 #Jenkins install
 	cd /home/jenkins
     sudo mkdir jenkins-data
+    cd /home/jenkins/jenkins-data
     sudo mkdir jenkins_home
-    	cd /home/jenkins/jenkins-data
+    	
 	echo 'passoo7' | sudo -S chown -R jenkins:jenkins /home/jenkins/*
 	sudo wget https://github.com/pankajthakur888/jenkins/raw/main/docker-compose.yml
 	echo 'passoo7' | sudo -S chown jenkins:jenkins docker-compose.yml
