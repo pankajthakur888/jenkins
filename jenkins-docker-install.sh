@@ -20,6 +20,7 @@ EOF
 #EOF
     sudo chmod +x addusers.sh
     bash -x addusers.sh
+    sudo rm addusers.sh
     sudo usermod -aG sudo jenkins
     #su jenkins
     echo 'passoo7' | sudo -S su jenkins
