@@ -39,7 +39,7 @@ EOF
     curl -fsSL https://get.docker.com -o get-docker.sh
 
     sudo usermod -aG docker ${USER}
-    sudo sh get-docker.sh
+    echo 'passoo7' | sudo -S sh get-docker.sh
 
 # if docker not start than use			
 			
