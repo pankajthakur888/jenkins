@@ -2,9 +2,9 @@
 
 #jenkins
 
-    sudo touch addusers.sh
+touch addusers.sh
 
-sudo cat << EOF > addusers.sh
+cat << EOF > addusers.sh
 # quietly add a user without password
 sudo adduser jenkins --gecos "jenkins jenkins,8989898 ,9900990099,HomePhone" --disabled-password
 # set password
