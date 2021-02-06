@@ -2,7 +2,7 @@
 
 #jenkins
 
-    touch addusers.sh
+    sudo touch addusers.sh
 
 cat << EOF > addusers.sh
 # quietly add a user without password
