@@ -6,6 +6,7 @@ sudo curl -s https://raw.githubusercontent.com/pankajthakur888/jenkins/main/jenk
 
 
 
+#https://jimkang.medium.com/how-to-start-a-new-jenkins-container-and-update-jenkins-with-docker-cf628aa495e9
 
 To New Jenkins Container And Update Jenkins (Docker)
 
