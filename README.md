@@ -73,7 +73,7 @@ In case if you see a deprecated protocols: JNLP-connect, JNLP2-connect warning, 
 
 Go on, leave here and enjoy life!
 
-
+https://narenchejara.medium.com/how-to-configure-docker-container-as-build-slaves-for-jenkins-d7795f78402d
 
 Build an image
 Run the command below in order to build the image from the docker file
