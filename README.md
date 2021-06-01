@@ -75,5 +75,15 @@ Go on, leave here and enjoy life!
 
 
 
+Build an image
+Run the command below in order to build the image from the docker file
+$ docker image build -t docker-slave .
+Launch a Container
+$ docker run -d -ti -p 38787:22 docker-slave:latest
+Test SSH Connection
+$ ssh root@<machine_ip> -p 38787
+
+
+
 
 
