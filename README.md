@@ -84,6 +84,8 @@ Test SSH Connection
 $ ssh root@<machine_ip> -p 38787
 
 
+https://jimkang.medium.com/how-to-start-a-new-jenkins-container-and-update-jenkins-with-docker-cf628aa495e9
+
 
 
 
